@@ -1,0 +1,72 @@
+/* The basic which appears on all pages */
+@import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+body {
+    margin: 0;
+    padding: 0;
+    background: #c1bdba;
+    font-size: 16px;
+    color: #222;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 300;
+}
+
+/* User Registration page */
+/* Should be centered */
+.signup-box {
+    position: relative;
+    margin: 8% auto 5% auto;
+    width: 250px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 25px;
+    padding:20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+input{
+    align-content: center;
+
+}
+
+input[type="text"],
+input[type="password"]{
+    display: block;
+    color: #777;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 5px;
+    width:220px;
+    height:35px;
+    border:none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border-bottom: 2px solid #16a085;
+    color: #16a085;
+    transition: 0.2s ease;
+}
+
+/* The submit input type */
+input[type="submit"]{
+    margin-top:28px;
+    width: 120px;
+    height:32px;
+    background: #16a085;
+    border:none;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
