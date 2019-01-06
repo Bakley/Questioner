@@ -1,15 +1,4 @@
-/* The basic which appears on all pages */
-
-
 @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
-/*body {
-    margin: 0;
-    padding: 0;
-    background: #c1bdba;
-    font-size: 16px;
-    color: #222;
-    font-weight: 300;
-}*/
 
 /* Style everything */
 * {
@@ -29,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-h2, p {
+h1, h2, p {
     text-align: center;
 }
 
@@ -126,59 +115,85 @@ main .maincontainer {
     border-radius: 20px;
 
 }
-.createmeetup {
+main .createmeetup {
     flex: 1;
     flex-basis: 30%;
     box-sizing: border-box;
+    order: 2;
 
 }
 
-.viewmeetup {
+main .viewmeetup {
     flex: 2;
     flex-basis: 60%;
     box-sizing: border-box;
+    order: 1;
 
-}
-
-main .wrapper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 1em auto;
-  padding: 1em;
 }
 
 table.table { width: 100%; }
 
 .table th, .table td {
   text-align: left;
-  padding: 0.25em;
+  padding: 0.5em;
 }
 
 .table tr {
-  border-bottom: 1px solid #DDD;
+  /*border-bottom: 1px solid #DDD;*/
 }
+
 td.edit-buttons { text-align: right; }
 button {
-  border-radius: 3px;
-  border: none;
-  margin: 0 0.25em;
-  transition: all 0.3s;
+    border-radius: 5px;
+    border: none;
+    margin: 0 0.25em;
+
 }
 
 button:hover {
   box-shadow: 0 0 4px rgba(3,3,3,0.8);
   opacity: 0.9;
+
 }
 
-button.edit { background: #6F9; }
-button.delete { background: #F69; }
+button.edit.btn { background: #6F9; }
+button.delete.btn { background: #F69; }
 
 
+/* ####################################### */
+        /* Boxes for site */
+/* ####################################### */
 /* User Registration page */
 /* Should be centered */
 .signup-box {
     position: relative;
     margin: 8% auto 5% auto;
+    width: 250px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 25px;
+    padding:20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* The login box should be centered */
+.login-box {
+    position: relative;
+    margin: 8% auto 5% auto;
+    width: 250px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 25px;
+    padding:20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* create meet-up box*/
+.meetup-box{
+    /*position: relative;*/
+    margin: auto;
     width: 250px;
     height: 400px;
     background: #FFF;
@@ -245,30 +260,6 @@ input[type="submit"]:active {
     transition: 0.1s ease;
 }
 
-/* The login box should be centered */
-.login-box {
-    position: relative;
-    margin: 8% auto 5% auto;
-    width: 250px;
-    height: 400px;
-    background: #FFF;
-    border-radius: 25px;
-    padding:20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    text-align: center;
-}
-
-.meetup-box{
-    /*position: relative;*/
-    margin: 3%;
-    width: 250px;
-    height: 400px;
-    background: #FFF;
-    border-radius: 25px;
-    padding:20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    text-align: center;
-}
 
 /* ####################################### */
         /* responsiveness of site */
@@ -325,15 +316,21 @@ input[type="submit"]:active {
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0.5em 0;
-        border: 1px solid rgba(3,3,3,0.2);
       }
     td, th {
         flex: 1 1 150px;
-        /*border: 0.5px solid rgba(3,3,3,0.2);*/
       }
-    td.edit-buttons, td.empty {
-        /*flex: 1 0 90%;
-        text-align: center;*/
+
+    button.btn {
+        margin-top:2px;
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: 0.1s ease;
+        cursor: pointer;
       }
+
 }
-}
+
