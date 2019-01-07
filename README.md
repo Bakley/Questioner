@@ -22,7 +22,7 @@ Questioner helps the meet up organizer prioritize questions to be answered. Othe
 - JavaScript
 
 # Github pages link
-https://github.com/Bakley/Questioner.git/UI/signup.html
+https://bakley.github.io/Questioner/UI/landing.html
 
 # Author:
 Barclay Koin
